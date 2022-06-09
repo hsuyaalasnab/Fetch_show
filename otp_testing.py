@@ -37,7 +37,7 @@ def send_desired_email(otp_recieved,emailed):
 		sign.click()
 		time.sleep(2)                                        
 		company_email=browser.find_element_by_id("login-username")
-		company_email.send_keys('fetch_show@yahoo.com')                                 # enter email id   
+		company_email.send_keys('your email that is admin')                                 # enter email id   
 		time.sleep(2)
 		browser.find_element_by_id("login-signin").submit()
 
@@ -45,7 +45,7 @@ def send_desired_email(otp_recieved,emailed):
 		time.sleep(2)                                                     #helps the browser to load and wait for new page to open and adapt to the new page opened
 		password_official=browser.find_element_by_id("login-passwd")                                           
 
-		password_official.send_keys("Hora_Hora")                     # enter password    
+		password_official.send_keys("password to that email")                     # enter password    
 		password_official.send_keys(Keys.ENTER)
 #time.sleep(2)
 #next_button=browser.find_element_by_xpath('''//*[@id="login-signin"]''')
