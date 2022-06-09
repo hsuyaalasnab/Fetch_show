@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="static/finalstylesheet.css">
+
+<body>
+<h1 class="heading1">FETCH_SHOW</h1>
+
+  <div class="top_container">
+
+    <h1 class="heading2">Thank You</h1>
+    <h1 class="heading3"> Your order has been placed successfully</h1>
+     <img class="left_img" src="static/images/left.png" alt="left_img">
+    <img class="right_img" src="static/images/right.png" alt="right_img">
+
+    <a class="view_map" href="{{ url_for('directions') }}" action='/directions'><b>View delivery time and route </a> (Warehouse Location : Tri Nagar)</b>
+    <br>
+    <br>
+    <br>
+    <a class="end_buttons" href={{url_for("index")}} action='/scrap'><b>Go back to Search Page</b></a>
+    <a class="end_buttons" href="{{ url_for('user_orders') }}" action='/orders'><b>View previous orders</b></a>
+    <br>
+    <a class="end_buttons" href="{{ url_for('home') }}" action='/'> <b>Logout</b></a>
+
+  </div>
+</body>

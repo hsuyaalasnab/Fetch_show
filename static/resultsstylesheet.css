@@ -1,0 +1,76 @@
+body{
+  text-align: center;
+  margin: 0;
+}
+
+.top_container{
+  text-align: right;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #00918E;
+}
+
+p{
+  display: inline-block;
+}
+
+.top-bar-button{
+  background-color: #CCF0E1 ;
+  padding: 0.65rem;
+  border-radius: 25px;
+  box-shadow: 5px 5px white inset;
+  border: 0.5px solid #CCF0E1;
+  color: black;
+  display: inline-block;
+}
+
+.top-bar-button:hover{
+  box-shadow: 10px 10px 5px #116979;
+}
+
+.total_amount{
+font-size: 1.75rem;
+text-align: right;
+}
+
+.heading{
+  color: white;
+  text-align: left;
+  position: fixed;
+  left: 1rem;
+  display: inline-block;
+}
+
+.box3{
+  margin-bottom: 2rem;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 25px;
+  font-size: 1rem;
+
+}
+
+.box3:hover{
+  background-color: #CCF0E1;
+  border: 2px solid #4CBBB9;
+  opacity: 0.9;
+  box-shadow: 7px 7px 5px #aaaaaa;
+}
+
+.checkout_button{
+  background-color: #CCF0E1 ;
+  padding: 1rem;
+  border-radius: 25px;
+  box-shadow: 5px 5px white inset;
+  border: 0.5px solid #CCF0E1;
+  color: black;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.checkout_button:hover{
+  box-shadow: 10px 10px 5px #aaaaaa;
+}

@@ -1,0 +1,43 @@
+<head>
+  <title>CHECKOUT</title>
+  <link rel="stylesheet" href="static/checkoutstylesheet.css">
+</head>
+
+<div class="top_container">
+  <h1 class="heading"> FETCH_SHOW</h1>
+
+  <p><a class="top-bar-button" href={{url_for("index")}}> Go Back To Search Page </a>
+    &nbsp; &nbsp; &nbsp;
+    <a class="top-bar-button" href={{url_for("results")}}>Go Back To Cart &#xF6D2 </a>
+    &nbsp; &nbsp; &nbsp;
+    <a class="top-bar-button" href={{url_for("home")}}> Logout </a>
+    &nbsp; &nbsp;
+  </p>
+</div>
+
+
+<div class="first_container" style="background-image: url(static/images/mapimage1.bmp);">
+
+  <div class="second_container">
+    <h1>Enter your Delivery Address</h1>
+    <form method="POST" action='/checkout'>
+      <input class="box1" type="text" name="line1" placeholder="House Number">
+      <br>
+      <input class="box1" type="text" name="line2" placeholder="District">
+      <br>
+      <!--input class="box1" type="text" name="line3" placeholder="City/State"-->
+      <select name="line3" class="box1">
+      	<option value='Delhi'>DELHI</option>
+      	<option value='Mumbai'>MUMBAI</option>
+      	<option value='kolkata'>KOLKATA</option>
+      	<option value='Chennai'>CHENNAI</option>
+      </select>
+      <br>
+
+
+      <p> Currently delivering only in Major Cities</p>
+      <br>
+      <input class="box2" type="submit" value="Submit">
+    </form>
+  </div>
+</div>

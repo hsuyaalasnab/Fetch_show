@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FETCH_SHOW</title>
+  <link rel="stylesheet" href="static/scrapper_1stylesheet.css">
+</head>
+
+<body>
+
+  <div class="top_container">
+    <p>{% if (carts|length)==0 %}
+      Nothing To Show
+      {% else %}
+      <a class="cart" href={{url_for("results")}}>Go To Cart 🛒</a>
+      {% endif %}
+      &nbsp; &nbsp; &nbsp;
+    <a class="cart" href={{url_for("home")}}> Logout </a>
+&nbsp; &nbsp;
+  </p>
+  </div>
+  <div class="first_container" style="background-image: url(static/images/newimage1.bmp);">
+
+
+<div class="second_container">
+
+
+    <h1>FETCH_SHOW</h1>
+
+    <form method="POST" action='/scrap'>
+      <input class="search_box1" type="text" name="query" placeholder="Query">
+      <button class="search_box2" type="submit">Search</button>
+    </form>
+    </div>
+  </div>
+
+  <table cellspacing="100">
+    <!--  <ul> -->
+    {% for product in products %}
+    <!--    <li> -->
+    <tr>
+
+      <td> <img src="{{product.imgtag}}" alt=""> </td>
+      <td>
+        <h3>{{product.title}}</h3>
+        <br>
+        {{product.actual_price}} </td>
+      <td>
+        <form method="POST" action='/add'>
+          <input  type="hidden" name="image" value="{{product.imgtag}}" />
+          <input type="hidden" name="code" value="{{product.title}}" />
+          <input type="hidden" name="price" value="{{product.actual_price}}" />
+
+          <input class="box3" type="submit" value="Add to Cart" class="default-btn" />
+        </form>
+      </td>
+    </tr>
+    <!--    </li>   -->
+    {% endfor %}
+    <!--  </ul>    -->
+  </table>
+</body>
+
+</html>

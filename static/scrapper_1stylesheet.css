@@ -1,0 +1,89 @@
+body{
+  text-align: center;
+  margin: 0;
+}
+
+.top_container{
+  text-align: right;
+  font-size: 1.3rem;
+  margin-bottom: auto;
+}
+
+.cart{
+  background-color: #CCF0E1;
+  padding: 0.65rem;
+  border-radius: 25px;
+  box-shadow: 5px 5px white inset;
+  border: 0.5px solid #CCF0E1;
+  color: black;
+}
+
+.cart:hover{
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.first_container{
+  background-color: #4CBBB9;
+  height: 33rem;
+  background-repeat: no-repeat;
+  background-size: 100% 33rem;
+  margin-top: 10px;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.second_container{
+  height: auto;
+  width: 30%;
+  position: absolute;
+  right: 35%;
+  top: 20%;
+  background-color: white;
+}
+
+.search_box1{
+  margin-bottom: 2rem;
+  height: 2rem;
+  width: 15rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+.search_box1:hover{
+  opacity: 0.75;
+}
+
+
+.search_box2{
+  margin-bottom: 2rem;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+.search_box2:hover{
+  opacity: 0.75;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+.box3{
+  margin-bottom: 2rem;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 25px;
+  font-size: 1rem;
+
+}
+
+.box3:hover{
+  background-color: #CCF0E1;
+  border: 2px solid #4CBBB9;
+  opacity: 0.9;
+  box-shadow: 7px 7px 5px #aaaaaa;
+}
+
+h1{
+  margin: 0;
+  padding: 3rem;
+  font-size: 250%;
+}

@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/static/stylesheetreg.css">    
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap" rel="stylesheet">
+
+<body>
+  <h1>FETCH_SHOW</h1>
+  <table class="top-container" align=center cell-spacing=0>
+    <tr>
+      <td>
+        <img class="registration-img" src="/static/images/regpageimage.jpg" alt="registration-image">
+      </td>
+      <td>
+
+
+        <div class="first-container">
+          <h3>Register</h3>
+          <form class="registration-form" method="POST" action='/'>
+
+            <input class="input-box" type="text" name="new_username" placeholder="Username">
+            <br> <br>
+            <input class="input-box" type="password" name="password" placeholder="Password">
+            <br> <br>
+            <input class="input-box" type="email" name="email_id" placeholder="Email Id">
+            <br> <br>
+            <input class="input-box" type="tel" name="contact" placeholder="Contact - Mobile number" minlength="10" maxlength="10">
+            <br> <br>
+            <input class="input-box" type="submit" value="Register">
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="login-button">
+  <h4>Already have an account?</h4>
+  <br />
+  <a href="{{ url_for('do_login') }}" action='/login'><b>Login</b></a>
+    </div>
+</body>
+
+
+</form>

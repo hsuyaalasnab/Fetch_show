@@ -1,0 +1,85 @@
+body{
+  text-align: center;
+  margin: 0;
+}
+
+.top_container{
+  text-align: right;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+p{
+  display: inline-block;
+}
+
+.top-bar-button{
+  background-color: #CCF0E1;
+  padding: 0.65rem;
+  border-radius: 25px;
+  box-shadow: 5px 5px white inset;
+  border: 0.5px solid #CCF0E1;
+  color: black;
+  display: inline-block;
+}
+
+.top-bar-button:hover{
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.heading{
+  color: #00918E;
+  text-align: left;
+  position: fixed;
+  left: 1rem;
+  display: inline-block;
+}
+
+.first_container{
+  background-color: #4CBBB9;
+  height: 37rem;
+  background-repeat: no-repeat;
+  background-size: 100% 37rem;
+  margin-top: 10px;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.second_container{
+  height: auto;
+  width: 40%;
+  position: absolute;
+  right: 30%;
+  top: 20%;
+  background-color: white;
+}
+
+
+.box1{
+  width: 18rem;
+  height: 2rem;
+  margin: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+.box1:hover{
+  box-shadow: 7px 7px 3px #aaaaaa;
+}
+
+.box2{
+  background-color: white ;
+  padding: 0.75rem;
+  border-radius: 25px;
+  box-shadow: 5px 5px #CCF0E1 inset;
+  border: 0.5px solid #CCF0E1;
+  font-size: 1rem;
+}
+
+.box2:hover{
+  box-shadow: 10px 10px 5px #aaaaaa;
+}

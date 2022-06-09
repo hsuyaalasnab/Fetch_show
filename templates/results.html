@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="static/resultsstylesheet.css">
+
+
+<body>
+	<div class="top_container">
+		<h1 class="heading"> FETCH_SHOW</h1>
+
+		<p><a class="top-bar-button" href={{url_for("index")}}> Go Back To Search Page </a>
+			&nbsp; &nbsp; &nbsp;
+			<a class="top-bar-button" href={{url_for("home")}}> Logout </a>
+			&nbsp; &nbsp;
+		</p>
+	</div>
+
+		<h1 class="total_amount">Total Amount - {{total_amount}}</h1>
+
+	<table cellspacing="100">
+
+
+		{% for i in range(products|length) %}
+		<!--	<li> -->
+		<tr>
+			<td><img src="{{products[i][1]}}" alt=""></td>
+
+			<td> <h3>{{products[i][0]}}</h3>
+				<br>
+				{{products[i][2]}}
+				<!--name,price-->
+			</td>
+			<td>
+				<form method="POST" action='/results'>
+					<input type="hidden" name="code1" value="{{i}}" />
+					<input class="box3" type="submit" value="Delete" class="default-btn" />
+				</form>
+			</td>
+
+		</tr>
+
+		<!-- </li> -->
+		{% endfor %}
+	</table>
+
+
+	<h3 ><a class="checkout_button" href={{url_for("checkout")}} action='/checkout'><b>Proceed To Place Order</a></b></h3>
+<br>
+ <p>(Only cash on delivery is available)</p>
+</body>
+
+
+
+
+</html>

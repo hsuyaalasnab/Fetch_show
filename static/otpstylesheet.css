@@ -1,0 +1,54 @@
+body{
+  background-color: #192965;
+  background-image: url("https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/109855728/original/de5140b31bdcde8cb032cf3962f84cf1b3e74af4/create-unique-modern-abstract-geometric-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: left top;
+  opacity: 1.5;
+  text-align: center;
+}
+
+h1{
+  font-size: 3.5rem;
+  padding: 5rem;
+  text-shadow: 3px 3px black;
+  color: white;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+.first-container{
+  width: 30%;
+  height: auto;
+  margin: auto;
+  padding: 3rem;
+  background-color: #EDF7FA;
+  border-radius: 25px;
+  box-shadow: -5px 10px 38px 0 rgba(0,0,0,0.75);
+}
+
+.input-box {
+  border-radius: 25px;
+  height: 2rem;
+  width: 15rem;
+  border-width: medium;
+  background: rgba(69, 69, 71, 0.02);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.submit-box {
+  border-radius: 25px;
+  height: 2rem;
+  width: 15rem;
+  border-width: medium;
+  background: rgba(69, 69, 71, 0.02);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.submit-box:hover{
+  background: white;
+}

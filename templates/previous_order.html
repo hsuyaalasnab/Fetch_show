@@ -1,0 +1,45 @@
+<html>
+<link rel="stylesheet" href="static/previous_ordersstylesheet.css">
+
+<body>
+
+	<div class="top_container">
+		<h1 class="heading"> FETCH_SHOW</h1>
+
+		<p><a class="top-bar-button" href={{url_for("index")}}> Go Back To Search Page </a>
+			&nbsp; &nbsp; &nbsp;
+			<a class="top-bar-button" href={{url_for("home")}}> Logout </a>
+			&nbsp; &nbsp;
+		</p>
+	</div>
+
+
+	<table cellspacing="80">
+
+
+		{% for i in order_parchi %}
+		<!--	<li> -->
+		<tr>
+			<td> <img src="{{i[0]}}" alt="product_img"> </td>
+
+			<td>
+				<h3>{{i[1]}} </h3>
+				<br>
+				{{i[3]}}
+				<!-- name, price -->
+
+			</td>
+			<td>{{i[2]}} </td>
+			<!-- date -->
+		</tr>
+
+
+		<!--	</li> -->
+		{% endfor %}
+
+	</table>
+
+
+</body>
+
+</html>

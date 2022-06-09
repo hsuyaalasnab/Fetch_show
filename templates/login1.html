@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="static/loginstylesheet.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap" rel="stylesheet">
+
+<body>
+  <h1>FETCH_SHOW</h1>
+  <table class="top-container" align=center cell-spacing=0>
+    <tr>
+      <td>
+        <div class="first-container">
+          <h2>Login</h2>
+          <form method="POST" action='/login'>
+
+            <input class="input-box" type="username" name="email" placeholder=" Email">
+            <br><br>
+            <input class="input-box" type="password" name="password1" placeholder=" Password">
+            <font color='red'>
+            {% if flag==0 %}
+            <br><br>
+            {% elif flag==1 %}
+            <p> Email not found </p>
+            {% elif flag==2 %}
+            <p> Wrong Password Entered </p>
+            {% elif flag==3 %}
+            <p> Wrong OTP entered </p>
+            {% endif %}
+            </font>
+
+            <input class="input-box" type="submit" value="Log in">
+          </form>
+        </div>
+      </td>
+
+      <td>
+        <img class="login-img" src="static/images/regpageimage.jpg" alt="login-image">
+      </td>
+    </tr>
+  </table>
+
+  <div class="registration-button">
+    <h3>New to this site?</h3>
+    <br />
+    <a href="{{ url_for('home') }}" action='/'><b>Register</b></a>
+  </div>
+
+</body>
